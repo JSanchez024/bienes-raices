@@ -1,11 +1,6 @@
 <?php
 function conectarDB() : mysqli{
-    $db = new mysqli(
-        $_ENV['DB_HOST'],
-        $_ENV['DB_USER'],
-        $_ENV['DB_PASS'],
-        $_ENV['DB_NAME'],
-    ); 
+    $db = new mysqli( 'localhost', 'root', 'juako1998', 'bienesraices_crud'); 
        // $db->set_charset('UTF-8');
 
     if(!$db){
